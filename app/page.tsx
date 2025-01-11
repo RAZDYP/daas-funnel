@@ -9,13 +9,17 @@ import ServiceCard from "@/components/cards/services"
 import PortFolioCards from "@/components/cards/portfolio"
 import PartnerCards from "@/components/cards/partners"
 import SparklesText from "@/components/ui/sparkles-text";
+import Testimonials from "@/components/cards/testimonials"
+import TypingAnimation from "@/components/ui/typing-animation";
 export default function Example() {
   return (
     <div className='flex flex-col w-full items-center gap-6'>
       <Header />
       <section className='flex flex-col items-center gap-8 px-4 w-full sm:w-full lg:w-[70%] xl:w-[70%] 2xl:w-[60%]'>
         <div className='flex flex-col items-center'>
-          <SparklesText text='Developers' className='text-[#215FF6] text-[28px] sm:text-[40px] md:text-[54px] font-semibold' />
+          <TypingAnimation className='text-[#215FF6] text-center text-[28px] sm:text-[40px] md:text-[54px] font-semibold'>
+            Developers
+          </TypingAnimation>
           <p className='text-center font-semibold text-[28px] sm:text-[40px] md:text-[54px]'> You Can Trust At A Price You Can Afford</p>
         </div>
         <p className='text-center font-medium text-sm sm:text-md md:text-xl lg:text-xl xl:text-xl 2xl:text-xl'>Access a global network of pre-vetted developers tailored to your needs, without the hassle. 500,000+ skilled professionals, ready to take on your projects.</p>
@@ -64,9 +68,10 @@ export default function Example() {
       </section>
       <section className='flex flex-col items-center gap-10 px-4 w-full sm:w-full lg:w-[80%] xl:w-[80%] 2xl:w-[70%]'>
         <div>
-          <SparklesText text='How It Works' className='text-[#215FF6] text-center text-[28px] sm:text-[40px] md:text-[54px] font-semibold' />
-          <p className='text-center font-medium text-sm sm:text-md md:text-xl lg:text-xl xl:text-xl 2xl:text-xl'>Discover how our streamlined process connects you with top developers to bring your project to life effortlessly.</p>
+          <SparklesText text='Testimonials' className='text-[#215FF6] text-center text-[28px] sm:text-[40px] md:text-[54px] font-semibold' />
+          <p className='text-center font-medium text-sm sm:text-md md:text-xl lg:text-xl xl:text-xl 2xl:text-xl'>Don’t take our word for it. Hear it from our happy clients.</p>
         </div>
+        <Testimonials />
       </section>
     </div>
   )
