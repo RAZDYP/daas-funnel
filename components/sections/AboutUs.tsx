@@ -17,7 +17,7 @@ function AboutUs() {
                 </div>
                 <div className='flex flex-col items-center gap-6'>
                     <p className='text-xl sm:text-lg md:text-lg  mb-6 text-justify '>We are a leading developer services company dedicated to connecting businesses with top-tier tech talent. Our mission is to provide seamless access to skilled developers who deliver innovative solutions. Whether building, scaling, or maintaining projects, we ensure excellence through tailored strategies and a commitment to quality, helping businesses thrive in today’s fast-paced digital landscape.</p>
-                    <GlowingButton label='Learn More' />
+                    <GlowingButton label='Learn More' className='text-white' />
                 </div>
             </div>
         </section>
