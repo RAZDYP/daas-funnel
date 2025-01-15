@@ -1,6 +1,7 @@
 import React from 'react'
 import SparklesText from "@/components/ui/sparkles-text";
 import TestimonialsCards from "@/components/cards/testimonials"
+import TestimonialsV2 from '@/components/cards/testimonialsv2'
 
 function Testimonials() {
     return (
@@ -9,7 +10,10 @@ function Testimonials() {
                 <SparklesText text='Testimonials' className='text-[#215FF6] text-center text-[28px] sm:text-[40px] md:text-[54px] font-semibold' />
                 <p className='text-center font-medium text-sm sm:text-md md:text-xl lg:text-xl xl:text-xl 2xl:text-xl'>Don’t take our word for it. Hear it from our happy clients.</p>
             </div>
-            <TestimonialsCards />
+            {/* <TestimonialsCards /> */}
+
+            <TestimonialsV2 />
+
         </section>
     )
 }

@@ -37,12 +37,11 @@ const Card: React.FC = () => {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3">
             {
                 cards.map((card, index) => (
-                    <div key={index} className="rounded-lg bg-transparent">
-                        <div className="w-[290px] h-full p-6 flex flex-col items-center justify-between gap-3">
+                    <div key={index} className="bg-transparent">
+                        <div className="w-[290px]  p-3 flex flex-col items-center justify-between gap-3">
                             {card.icon}
                             <p className="text-xl  font-semibold text-center">{card.title}</p>
                             <p className="text-sm  font-medium text-center">{card.description}</p>
-
                         </div>
                     </div>
                 ))

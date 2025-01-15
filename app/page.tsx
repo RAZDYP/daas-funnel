@@ -4,7 +4,6 @@ import Header from '@/components/Header'
 import HeaderText from '@/components/sections/HeaderText'
 import AboutUs from '@/components/sections/AboutUs'
 import Explore from '@/components/sections/Explore'
-import Portfolio from '@/components/sections/Portfolio'
 import Partner from '@/components/sections/Partner'
 import Testimonials from '@/components/sections/Testimonials'
 import ContactForm from '@/components/sections/ContactForm'
@@ -15,10 +14,9 @@ export default function Example() {
       <Header />
       <HeaderText />
       <Companies />
-      <AboutUs />
       <Explore />
-      <Portfolio />
       <Partner />
+      <AboutUs />
       <Testimonials />
       <ContactForm />
     </div>
