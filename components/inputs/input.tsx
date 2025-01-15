@@ -7,14 +7,14 @@ const Input: React.FC<InputProps> = ({ label, ...props }) => {
     return (
         <div className="relative w-full">
             <label
-                className="absolute -top-2.5 left-4 bg-black px-1 text-md text-white"
+                className="absolute -top-2.5 left-4 bg-white px-1 text-md text-black"
                 htmlFor={props.id || props.name}
             >
                 {label}
             </label>
             <input
                 {...props}
-                className="w-full rounded-lg border-2 border-[#215FF6] bg-black px-4 py-2 sm:py-2 md:py-3 lg:py-3 xl:py-3 2xl:py-3 text-white outline-none "
+                className="w-full rounded-lg border-2 border-[#215FF6] bg-white px-4 py-2 sm:py-2 md:py-3 lg:py-3 xl:py-3 2xl:py-3 text-black outline-none "
             />
         </div>
     );

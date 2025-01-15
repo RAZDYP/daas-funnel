@@ -10,7 +10,6 @@ function Testimonials() {
                 <p className='text-center font-medium text-sm sm:text-md md:text-xl lg:text-xl xl:text-xl 2xl:text-xl'>Don’t take our word for it. Hear it from our happy clients.</p>
             </div>
             <TestimonialsV2 />
-
         </section>
     )
 }
