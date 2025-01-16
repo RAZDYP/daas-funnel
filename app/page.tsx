@@ -9,6 +9,7 @@ import ContactForm from '@/components/sections/ContactForm'
 import Companies from '@/components/sections/Companies'
 import YoutubeVideo from '@/components/sections/YoutubeVideo'
 import NonTechFounder from '@/components/sections/NonTechFounder'
+import HowItWorks from '@/components/sections/HowItWorks'
 export default function Example() {
   return (
     <div className='flex flex-col w-full items-center gap-6'>
@@ -19,6 +20,7 @@ export default function Example() {
       <Partner />
       <AboutUs />
       <YoutubeVideo />
+      <HowItWorks />
       <NonTechFounder />
       <Testimonials />
       <ContactForm />

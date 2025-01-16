@@ -10,7 +10,7 @@ const testimonials = [
     {
         id: 1,
         quote:
-            "Simform’s iterative feedback process refined the project continuously, aligning closely with evolving client needs.",
+            "Simform’s iterative feedback process refined the project continuously, aligning closely with evolving client needs. evolving market demands.",
         name: "Chris Lyle",
         title: "CEO, Emrana Engineering",
         image: Client1
@@ -18,7 +18,7 @@ const testimonials = [
     {
         id: 2,
         quote:
-            "Simform’s project management and technical agility boosted our app’s performance, meeting evolving market demands.",
+            "Simform’s project management and technical agility boosted our app’s performance, meeting evolving market demands. evolving market demands.",
         name: "Justin Wollman",
         title: "Product Manager, SwiftShopper",
         image: Client2
@@ -51,6 +51,18 @@ const Carousel = () => {
                 },
             },
         ],
+        appendDots: (dots: React.ReactNode) => (
+            <div
+                style={{
+                    bottom: "-55px",
+                    left: "40%",
+                }}
+            >
+                <ul style={{
+                    margin: "0px"
+                }}> {dots} </ul>
+            </div>
+        ),
         arrows: false,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -112,16 +124,16 @@ const Carousel = () => {
                     );
                 })}
             </Slider>
-            <div className="flex w-full justify-start items-center space-x-4 mt-6">
+            <div className="flex w-full px-4 justify-start items-center space-x-4 mt-6">
                 <button
                     onClick={handlePrev}
                     className="bg-blue-50 rounded-full text-blue-600 d p-2  ">
-                    <ArrowLeftIcon className='h-6 w-6' />
+                    <ArrowLeftIcon className='h-5 w-5' />
                 </button>
                 <button
                     onClick={handleNext}
                     className="bg-blue-50 rounded-full text-blue-600 p-2 ">
-                    <ArrowRightIcon className='h-6 w-6' />
+                    <ArrowRightIcon className='h-5 w-5' />
                 </button>
             </div>
         </div>
