@@ -7,7 +7,7 @@ import BackgroundImage from "@/public/images/animation/background.svg"
 const AnimatedCards = () => {
     const [isHovered, setIsHovered] = useState(false);
     return (
-        <div className="bg-black flex justify-center items-center ">
+        <div className="bg-transparent flex justify-center items-center ">
             <div className="relative"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}>

@@ -4,7 +4,7 @@ import GlowingButton from '@/components/GlowingButton'
 import AnimatedCards from '@/components/AnimationCards'
 function HeaderText() {
     return (
-        <div className='w-full flex items-center justify-center bg-gradient-to-t from-black to-[#000e1a] text-white'>
+        <div className='w-full flex items-center justify-center bg-gradient-to-r from-black to-[#022b4b]  text-white'>
             <section className='flex flex-col items-center gap-8 px-10 py-10 w-full sm:w-full lg:w-[80%] xl:w-[80%] 2xl:w-[80%]  rounded-md'>
                 <div className='flex flex-col items-center'>
                     <TypingAnimation className='text-[#215FF6] text-center text-[28px] sm:text-[40px] md:text-[54px] font-semibold'>
