@@ -47,13 +47,15 @@ const Card: React.FC = () => {
 };
 function NonTechFounder() {
     return (
-        <section className='flex flex-col items-center gap-8 px-10 py-10 w-full sm:w-full lg:w-[80%] xl:w-[80%] 2xl:w-[80%] bg-gradient-to-r from-black to-[#022b4b] text-white rounded-md mt-8'>
-            <div className='w-full text-start leading-none '>
-                <h2 className=' text-[28px] sm:text-[40px] md:text-[54px] font-semibold'>If you are a</h2>
-                <p className='text-[28px] sm:text-[40px] md:text-[54px] font-semibold  bg-gradient-to-r from-blue-700 via-blue-200 to-blue-50 bg-clip-text text-transparent'>non-tech founder</p>
-            </div>
-            <Card />
-        </section>
+        <div className='w-full flex items-center justify-center bg-gradient-to-r from-black to-[#022b4b] text-white'>
+            <section className='flex flex-col items-center gap-10 px-10 py-10 w-full sm:w-full lg:w-[80%] xl:w-[80%] 2xl:w-[70%] text-white'>
+                <div className='w-full text-start leading-none '>
+                    <h2 className=' text-[28px] sm:text-[40px] md:text-[54px] font-semibold'>If you are a</h2>
+                    <p className='text-[28px] sm:text-[40px] md:text-[54px] font-semibold  bg-gradient-to-r from-blue-700 via-blue-200 to-blue-50 bg-clip-text text-transparent'>non-tech founder</p>
+                </div>
+                <Card />
+            </section>
+        </div>
     )
 }
 export default NonTechFounder

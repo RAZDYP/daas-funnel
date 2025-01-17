@@ -10,20 +10,25 @@ import Companies from '@/components/sections/Companies'
 import YoutubeVideo from '@/components/sections/YoutubeVideo'
 import NonTechFounder from '@/components/sections/NonTechFounder'
 import HowItWorks from '@/components/sections/HowItWorks'
+import GraphComp from '@/components/sections/GraphComp'
+import Footer from '@/components/sections/Footer'
+
 export default function Example() {
   return (
-    <div className='flex flex-col w-full items-center gap-6'>
+    <div className='flex flex-col w-full items-center gap-6 overflow-x-hidden'>
       <Header />
       <HeaderText />
       <Companies />
       <Explore />
       <Partner />
       <AboutUs />
+      <GraphComp />
       <YoutubeVideo />
       <HowItWorks />
       <NonTechFounder />
       <Testimonials />
       <ContactForm />
+      <Footer />
     </div>
   )
 }

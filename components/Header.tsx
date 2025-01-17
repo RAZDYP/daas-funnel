@@ -1,35 +1,33 @@
 'use client'
 
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+// import { useState } from 'react'
+// import { Dialog, DialogPanel } from '@headlessui/react'
+// import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import mainLogo from '@/public/images/main-logo.svg'
 import GlowingButton from '@/components/GlowingButton'
 
 
 
-const navigation = [
-    { name: 'Home', href: '#' },
-    { name: 'About Us', href: '#' },
-    { name: 'Service', href: '#' },
-    { name: 'Contact', href: '#' },
-]
+// const navigation = [
+//     { name: 'Home', href: '#' },
+//     { name: 'About Us', href: '#' },
+//     { name: 'Service', href: '#' },
+//     { name: 'Contact', href: '#' },
+// ]
 
 export default function Header() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+    // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
-
         <header className=" w-full ">
-            <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+            <nav aria-label="Global" className="flex items-center justify-between px-6 pt-6 lg:px-8">
                 <div className="flex lg:flex-1">
                     <Image src={mainLogo} alt="" />
                 </div>
-                <div className="flex lg:hidden">
+                {/* <div className="flex lg:hidden">
                     <button
                         type="button"
-                        onClick={() => setMobileMenuOpen(true)}
+                        // onClick={() => setMobileMenuOpen(true)}
                         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
                     >
                         <span className="sr-only">Open main menu</span>
@@ -42,7 +40,7 @@ export default function Header() {
                             {item.name}
                         </a>
                     ))}
-                </div>
+                </div> */}
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                     <GlowingButton
                         label="Book a call"
@@ -50,7 +48,7 @@ export default function Header() {
                     />
                 </div>
             </nav>
-            <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+            {/* <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
                 <div className="fixed inset-0 z-50" />
                 <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
@@ -92,7 +90,7 @@ export default function Header() {
                         </div>
                     </div>
                 </DialogPanel>
-            </Dialog>
+            </Dialog> */}
         </header>
     )
 }
