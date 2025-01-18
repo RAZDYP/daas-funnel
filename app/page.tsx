@@ -20,12 +20,12 @@ export default function Example() {
       <HeaderText />
       <Companies />
       <Explore />
-      <Partner />
       <AboutUs />
       <GraphComp />
-      <YoutubeVideo />
+      <Partner />
       <HowItWorks />
       <NonTechFounder />
+      <YoutubeVideo />
       <Testimonials />
       <ContactForm />
       <Footer />
