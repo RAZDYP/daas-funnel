@@ -11,9 +11,9 @@ function HeaderText() {
                         Developers
                     </TypingAnimation>
 
-                    <p className='text-center font-semibold text-[28px] sm:text-[40px] md:text-[54px]'> You Can Trust At A Price You Can Afford</p>
+                    <p className='text-center font-semibold text-[28px] sm:text-[40px] md:text-[72px] font-openSauceSansSemibold'> You Can Trust At A Price You Can Afford</p>
                 </div>
-                <p className='text-center font-medium text-sm sm:text-md md:text-xl lg:text-xl xl:text-xl 2xl:text-xl'>Access a global network of pre-vetted developers tailored to your needs, without the hassle. 500,000+ skilled professionals, ready to take on your projects.</p>
+                <p className='text-center font-medium text-sm sm:text-md md:text-xl lg:text-xl xl:text-xl 2xl:text-xl font-openSauceSansMedium'>Access a global network of pre-vetted developers tailored to your needs, without the hassle. 500,000+ skilled professionals, ready to take on your projects.</p>
                 <GlowingButton label='Get Started' />
                 <AnimatedCards />
             </section>
