@@ -15,20 +15,23 @@ import Footer from '@/components/sections/Footer'
 
 export default function Example() {
   return (
-    <div className='flex flex-col w-full items-center gap-6 overflow-x-hidden'>
+    <div className='w-full'>
       <Header />
-      <HeaderText />
-      <Companies />
-      <Explore />
-      <AboutUs />
-      <GraphComp />
-      <Partner />
-      <HowItWorks />
-      <NonTechFounder />
-      <YoutubeVideo />
-      <Testimonials />
-      <ContactForm />
-      <Footer />
+
+      <div className='flex flex-col font-light w-full items-center gap-6 sm:gap-8 md:gap-12 lg:gap-14 xl:gap-14 2xl:gap-16 overflow-x-hidden'>
+        <HeaderText />
+        <Companies />
+        <Explore />
+        <AboutUs />
+        <GraphComp />
+        <Partner />
+        <HowItWorks />
+        <NonTechFounder />
+        <YoutubeVideo />
+        <Testimonials />
+        <ContactForm />
+        <Footer />
+      </div>
     </div>
   )
 }

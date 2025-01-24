@@ -12,11 +12,11 @@ const GlowingButton: React.FC<GlowingButtonProps> = ({
 }) => {
   const buttonClasses = `
     bg-[#215FF6]
-    
+    min-w-[200px]
     text-md 
-    py-1
+    py-[8px]
     px-10 
-    rounded-[8px]
+    rounded-2xl
     cursor-pointer 
     hover:animate-[glowing_1.3s_infinite] 
     transition-all 

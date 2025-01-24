@@ -4,7 +4,7 @@
 // import { Dialog, DialogPanel } from '@headlessui/react'
 // import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-import mainLogo from '@/public/images/main-logo.svg'
+import mainLogo from '@/public/images/logo-main.svg'
 import GlowingButton from '@/components/GlowingButton'
 
 
@@ -20,9 +20,9 @@ export default function Header() {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
         <header className=" w-full ">
-            <nav aria-label="Global" className="flex items-center justify-between px-6 pt-6 lg:px-8">
+            <nav aria-label="Global" className="flex items-center justify-between px-6 py-6 lg:px-8">
                 <div className="flex lg:flex-1">
-                    <Image src={mainLogo} alt="" />
+                    <Image width={200} src={mainLogo} alt="logo" />
                 </div>
                 {/* <div className="flex lg:hidden">
                     <button

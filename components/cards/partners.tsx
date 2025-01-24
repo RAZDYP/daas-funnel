@@ -1,36 +1,32 @@
 import React from "react";
-import { UserGroupIcon, ChatBubbleLeftEllipsisIcon, WrenchScrewdriverIcon, LinkIcon, CheckBadgeIcon, ChatBubbleLeftIcon } from '@heroicons/react/24/outline'
+import { UserGroupIcon, ChatBubbleLeftEllipsisIcon, WrenchScrewdriverIcon, LinkIcon, CheckBadgeIcon } from '@heroicons/react/24/outline'
 const cards = [
     {
         icon: <UserGroupIcon className="h-8 w-8 font-bold text-blue-500" />,
-        title: "Valuing Your Time",
-        description: "Focus on core business activities while we manage your tech needs.",
+        title: "Business-Focused Solutions.",
+        description: "Customized Solutions for Your Unique Challenges.",
     },
     {
         icon: <ChatBubbleLeftEllipsisIcon className="h-8 w-8 font-bold text-blue-500" />,
-        title: "Unmatched Expertise",
-        description: "A team of seasoned developers delivering cutting-edge solutions",
+        title: "Your Deadlines, Our Commitment",
+        description: "We understand the importance of your deadlines, and we make it our priority to deliver on time, every time.",
     },
     {
         icon: <WrenchScrewdriverIcon className="h-8 w-8 font-bold text-blue-500" />,
-        title: "Tailored Approach",
-        description: "Custom-fit services to maximize impact.",
+        title: "Dedicated Support",
+        description: "Hands-on support every step of the way, keeping things running smoothly 24/7.",
     },
     {
         icon: <LinkIcon className="h-8 w-8 font-bold text-blue-500" />,
-        title: "Dedicated Support",
-        description: "Seamless collaboration as an extension of your team.",
+        title: "Top Developers, Writing Quality Code",
+        description: "Our developers bring their expertise to deliver clean, efficient, and scalable code - focused on quality and performance",
     },
     {
         icon: <CheckBadgeIcon className="h-8 w-8 font-bold text-blue-500" />,
         title: "Proven Track Record",
-        description: "A portfolio of success across industries",
+        description: "Trusted for delivering results, time and again.",
     },
-    {
-        icon: <ChatBubbleLeftIcon className="h-8 w-8 font-bold text-blue-500" />,
-        title: "Proven Track Record",
-        description: "A portfolio of success across industries",
-    },
+
 ];
 const Card: React.FC = () => {
     return (
@@ -40,7 +36,12 @@ const Card: React.FC = () => {
                     <div key={index} className="bg-transparent">
                         <div className="w-[290px]  p-3 flex flex-col items-center justify-between gap-3">
                             {card.icon}
-                            <p className="text-xl  font-semibold text-center">{card.title}</p>
+                            <>
+                                <p className="text-xl  font-semibold text-center">{card.title}</p>
+                                <hr className="w-full border-[#D0D5DD]" />
+                            </>
+
+
                             <p className="text-sm  font-medium text-center">{card.description}</p>
                         </div>
                     </div>

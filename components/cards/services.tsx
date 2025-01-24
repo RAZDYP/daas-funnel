@@ -27,7 +27,7 @@ const Card: React.FC = () => {
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3">
                 {
                     cards.map((card, index) => (
-                        <div key={index} className="w-[290px]  bg-custom-gradient rounded-lg shadow-lg p-6 flex flex-col justify-between gap-5">
+                        <div key={index} className="w-[290px]  bg-custom-gradient rounded-lg shadow-lg p-6 flex flex-col  gap-4">
                             {card.icon}
                             <p className="text-xl font-semibold ">{card.title}</p>
                             <div className="ps-4">
