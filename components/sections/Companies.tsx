@@ -12,6 +12,7 @@ import ChatGptLogo from "@/public/images/services/chat-gpt.svg";
 import GoogleGeminiLogo from "@/public/images/services/google-gemini.svg";
 import GoogleTagManagerLogo from "@/public/images/services/google-tag-manager.jpg";
 import HubspotLogo from "@/public/images/services/hubspot.svg";
+import GhlLogo from "@/public/images/services/ghl.png"
 
 import Salesforce from "@/public/images/services/salesforce.svg";
 
@@ -59,6 +60,11 @@ const companies = [
         img: Salesforce,
         size: 100
     },
+    {
+        name: "GHL",
+        img: GhlLogo,
+        size: 150
+    }
 
 ];
 const ReviewCard = ({
@@ -88,7 +94,7 @@ export default function Companies() {
         <>
 
             <div className="relative flex  w-full sm:w-full lg:w-[80%] xl:w-[80%] 2xl:w-[80%] flex-col items-center justify-center overflow-hidden  bg-background ">
-                <p className='text-[#215FF6] text-center text-[26px] sm:text-[36px] md:text-[48px]  font-semibold'>
+                <p className='text-[#1c2d68] text-center text-[26px] sm:text-[36px] md:text-[48px]  font-semibold'>
                     We are certified experts in
                 </p>
                 <Marquee pauseOnHover className="[--duration:20s]">

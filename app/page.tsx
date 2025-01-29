@@ -1,5 +1,4 @@
 'use client'
-import Header from '@/components/Header'
 import HeaderText from '@/components/sections/HeaderText'
 import AboutUs from '@/components/sections/AboutUs'
 import Explore from '@/components/sections/Explore'
@@ -16,8 +15,6 @@ import Footer from '@/components/sections/Footer'
 export default function Example() {
   return (
     <div className='w-full'>
-      <Header />
-
       <div className='flex flex-col font-light w-full items-center gap-6 sm:gap-8 md:gap-12 lg:gap-14 xl:gap-14 2xl:gap-16 overflow-x-hidden'>
         <HeaderText />
         <Companies />

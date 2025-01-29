@@ -20,18 +20,23 @@ const cards = [
         title: "AI & Machine Learning",
         description: "Crafting user-friendly, responsive websites",
     },
+    {
+        icon: <Image src={AiIcon} alt="icon" />,
+        title: "AI & Machine Learning",
+        description: "Crafting user-friendly, responsive websites",
+    },
 ];
 const Card: React.FC = () => {
     return (
         <>
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4">
                 {
                     cards.map((card, index) => (
-                        <div key={index} className="w-[290px]  bg-custom-gradient rounded-lg shadow-lg p-6 flex flex-col  gap-4">
+                        <div key={index} className="w-[250px]  bg-custom-gradient rounded-lg shadow-lg py-5 px-4 flex flex-col  gap-4">
                             {card.icon}
-                            <p className="text-xl font-semibold ">{card.title}</p>
+                            <p className="text-lg font-semibold ">{card.title}</p>
                             <div className="ps-4">
-                                <ul className="list-disc text-md font-medium">
+                                <ul className="list-disc text-sm font-medium">
                                     <li>{card.description}</li>
                                 </ul>
                             </div>

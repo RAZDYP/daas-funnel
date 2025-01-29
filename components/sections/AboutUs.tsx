@@ -7,7 +7,7 @@ function AboutUs() {
     return (
         <section className='flex flex-col items-center gap-10 px-4 w-full sm:w-full lg:w-[70%] xl:w-[70%] 2xl:w-[60%]'>
             <div>
-                <p className='text-[#215FF6] text-center text-[26px] sm:text-[36px] md:text-[48px]  font-semibold'>
+                <p className='text-[#1c2d68] text-center text-[26px] sm:text-[36px] md:text-[48px]  font-semibold'>
                     About  Us
                 </p>
                 <p className='text-center text-sm sm:text-md md:text-xl lg:text-xl xl:text-xl 2xl:text-xl'>Empowering Your Vision with Exceptional Development.</p>
@@ -17,7 +17,7 @@ function AboutUs() {
                     <Image width={450} src={FounderImage} alt='' />
                 </div>
                 <div className='flex flex-col gap-6'>
-                    <p className='text-sm sm:text--md md:text-lg text-justify  text-black'>We are a leading developer services company dedicated to connecting businesses with top-tier tech talent. Our mission is to provide seamless access to skilled developers who deliver innovative solutions. Whether building, scaling, or maintaining projects, we ensure excellence through tailored strategies and a commitment to quality, helping businesses thrive in today’s fast-paced digital landscape.</p>
+                    <p className='text-sm sm:text--md md:text-lg text-justify  '>We are a leading developer services company dedicated to connecting businesses with top-tier tech talent. Our mission is to provide seamless access to skilled developers who deliver innovative solutions. Whether building, scaling, or maintaining projects, we ensure excellence through tailored strategies and a commitment to quality, helping businesses thrive in today’s fast-paced digital landscape.</p>
                     <div>
                         <GlowingButton label='Learn More' className='text-white' />
 

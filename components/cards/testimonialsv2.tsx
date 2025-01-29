@@ -95,7 +95,7 @@ const Carousel = () => {
                     return (
                         <div key={item.id} className="px-4  py-2 gap-4">
                             <div className="bg-blue-50 h-full flex flex-col justify-between p-6 rounded-xl">
-                                <p className="text-md text-black font-medium mb-4">
+                                <p className="text-md text-[#1c2d68] font-medium mb-4">
                                     {isLongQuote && !isExpanded
                                         ? `${item.quote.slice(0, MAX_CHARACTERS)}...`
                                         : item.quote}
@@ -115,7 +115,7 @@ const Carousel = () => {
                                         className="w-12 h-12 rounded-full object-cover"
                                     />
                                     <div>
-                                        <p className="font-semibold text-black">{item.name}</p>
+                                        <p className="font-semibold text-[#1c2d68]">{item.name}</p>
                                         <p className="text-sm text-gray-700">{item.title}</p>
                                     </div>
                                 </div>

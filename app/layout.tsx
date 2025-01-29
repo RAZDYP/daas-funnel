@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased font-openSauceSansMedium font-light  bg-white text-black ${openSauceSansMedium.variable} ${openSauceSansRegular.variable} ${openSauceSansSemibold.variable}`}
+        className={`antialiased font-openSauceSansMedium font-light  bg-white text-[#1c2d68] ${openSauceSansMedium.variable} ${openSauceSansRegular.variable} ${openSauceSansSemibold.variable}`}
       >
         {children}
       </body>

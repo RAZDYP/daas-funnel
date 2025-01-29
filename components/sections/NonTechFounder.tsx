@@ -3,23 +3,23 @@ import { UserGroupIcon, ChatBubbleLeftEllipsisIcon, WrenchScrewdriverIcon, LinkI
 const cards = [
     {
         icon: <UserGroupIcon className="h-8 w-8 font-bold text-blue-600" />,
-        title: "Transparent process and reports",
-        description: "Focus on core business activities while we manage your tech needs.",
+        title: "Transparency at Every Step",
+        description: "We provide clear, easy-to-understand reports, ensuring full transparency throughout the development process. Stay updated and confident in our progress at all times.",
     },
     {
         icon: <ChatBubbleLeftEllipsisIcon className="h-8 w-8 font-bold text-blue-600" />,
-        title: "Guidance from the team",
-        description: "A team of seasoned developers delivering cutting-edge solutions",
+        title: "Expert/Strategic Guidance",
+        description: "Our experts offer clear, actionable guidance to help you make informed decisions. We break down complex technical concepts to ensure you feel supported throughout the journey.",
     },
     {
         icon: <WrenchScrewdriverIcon className="h-8 w-8 font-bold text-blue-600" />,
-        title: "Smooth onboarding",
-        description: "Custom-fit services to maximize impact.",
+        title: "Effortless Onboarding",
+        description: "We ensure a seamless onboarding experience, guiding you through each step. Our approach helps you get started quickly, with no technical barriers.",
     },
     {
         icon: <LinkIcon className="h-8 w-8 font-bold text-blue-600" />,
-        title: "Regular demos",
-        description: "Seamless collaboration as an extension of your team.",
+        title: "Hands-On Demos",
+        description: "Stay aligned with the progress through regular demos. We provide hands-on updates, allowing you to give feedback and make adjustments as needed.",
     },
 
 

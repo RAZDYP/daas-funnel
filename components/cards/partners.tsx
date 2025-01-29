@@ -2,27 +2,27 @@ import React from "react";
 import { UserGroupIcon, ChatBubbleLeftEllipsisIcon, WrenchScrewdriverIcon, LinkIcon, CheckBadgeIcon } from '@heroicons/react/24/outline'
 const cards = [
     {
-        icon: <UserGroupIcon className="h-8 w-8 font-bold text-blue-500" />,
+        icon: <UserGroupIcon className="h-8 w-8 font-bold text-[#1c2d68]" />,
         title: "Business-Focused Solutions.",
         description: "Customized Solutions for Your Unique Challenges.",
     },
     {
-        icon: <ChatBubbleLeftEllipsisIcon className="h-8 w-8 font-bold text-blue-500" />,
+        icon: <ChatBubbleLeftEllipsisIcon className="h-8 w-8 font-bold text-[#1c2d68]" />,
         title: "Your Deadlines, Our Commitment",
         description: "We understand the importance of your deadlines, and we make it our priority to deliver on time, every time.",
     },
     {
-        icon: <WrenchScrewdriverIcon className="h-8 w-8 font-bold text-blue-500" />,
+        icon: <WrenchScrewdriverIcon className="h-8 w-8 font-bold text-[#1c2d68]" />,
         title: "Dedicated Support",
         description: "Hands-on support every step of the way, keeping things running smoothly 24/7.",
     },
     {
-        icon: <LinkIcon className="h-8 w-8 font-bold text-blue-500" />,
+        icon: <LinkIcon className="h-8 w-8 font-bold text-[#1c2d68]" />,
         title: "Top Developers, Writing Quality Code",
         description: "Our developers bring their expertise to deliver clean, efficient, and scalable code - focused on quality and performance",
     },
     {
-        icon: <CheckBadgeIcon className="h-8 w-8 font-bold text-blue-500" />,
+        icon: <CheckBadgeIcon className="h-8 w-8 font-bold text-[#1c2d68]" />,
         title: "Proven Track Record",
         description: "Trusted for delivering results, time and again.",
     },
