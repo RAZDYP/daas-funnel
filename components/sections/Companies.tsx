@@ -15,6 +15,7 @@ import HubspotLogo from "@/public/images/services/hubspot.svg";
 import GhlLogo from "@/public/images/services/ghl.png"
 
 import Salesforce from "@/public/images/services/salesforce.svg";
+import CloudfareIcon from "@/public/images/services/cloudfare.svg";
 
 const companies = [
     {
@@ -36,9 +37,7 @@ const companies = [
         name: "Oracle",
         img: Oracle,
         size: 100
-    }
-    ,
-
+    },
     {
         name: "GCP",
         img: GcpLogo,
@@ -64,7 +63,13 @@ const companies = [
         name: "GHL",
         img: GhlLogo,
         size: 150
+    },
+    {
+        name: "Cloudfare",
+        img: CloudfareIcon,
+        size: 100
     }
+
 
 ];
 const ReviewCard = ({

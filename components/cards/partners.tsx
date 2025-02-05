@@ -6,11 +6,7 @@ const cards = [
         title: "Business-Focused Solutions.",
         description: "Customized Solutions for Your Unique Challenges.",
     },
-    {
-        icon: <ChatBubbleLeftEllipsisIcon className="h-8 w-8 font-bold text-[#1c2d68]" />,
-        title: "Your Deadlines, Our Commitment",
-        description: "We understand the importance of your deadlines, and we make it our priority to deliver on time, every time.",
-    },
+
     {
         icon: <WrenchScrewdriverIcon className="h-8 w-8 font-bold text-[#1c2d68]" />,
         title: "Dedicated Support",
@@ -18,13 +14,18 @@ const cards = [
     },
     {
         icon: <LinkIcon className="h-8 w-8 font-bold text-[#1c2d68]" />,
-        title: "Top Developers, Writing Quality Code",
+        title: "Top Developers",
         description: "Our developers bring their expertise to deliver clean, efficient, and scalable code - focused on quality and performance",
     },
     {
         icon: <CheckBadgeIcon className="h-8 w-8 font-bold text-[#1c2d68]" />,
-        title: "Proven Track Record",
+        title: "Proven Track Record ",
         description: "Trusted for delivering results, time and again.",
+    },
+    {
+        icon: <ChatBubbleLeftEllipsisIcon className="h-8 w-8 font-bold text-[#1c2d68]" />,
+        title: "Your Deadlines, Our Commitment",
+        description: "We understand the importance of your deadlines, and we make it our priority to deliver on time, every time.",
     },
 
 ];
@@ -37,7 +38,7 @@ const Card: React.FC = () => {
                         <div className="w-[290px]  p-3 flex flex-col items-center justify-between gap-3">
                             {card.icon}
                             <>
-                                <p className="text-xl  font-semibold text-center">{card.title}</p>
+                                <p className="text-xl text-nowrap  font-semibold text-center">{card.title}</p>
                                 <hr className="w-full border-[#D0D5DD]" />
                             </>
 

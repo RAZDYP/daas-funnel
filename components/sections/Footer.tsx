@@ -4,20 +4,21 @@ function Footer() {
     const currentYear = new Date().getFullYear();
     const linkData = [
         {
-            href: "https://www.facebook.com",
+            href: "https://www.facebook.com/workwithdaas?mibextid=ZbWKwL",
             icon: <FaFacebookF size={20} />,
         },
         {
-            href: "https://www.instagram.com",
+            href: "https://www.instagram.com/work_withdaas?igsh=MWNmaWEwYXF0cG5pbw==",
             icon: <FaInstagram size={20} />,
         },
         {
-            href: "https://www.linkedin.com",
+            href: "https://www.linkedin.com/company/daas-developer-s-as-a-service/posts/?feedView=all",
             icon: <FaLinkedinIn size={20} />,
         },
         {
             href: "mailto:workwithdaas.com",
             icon: <FaEnvelope size={20} />,
+            text: "admin@workwithdaas.com",
         },
     ];
 
@@ -28,14 +29,26 @@ function Footer() {
                     <div className="flex space-x-6 mb-4 md:mb-0">
                         {
                             linkData.map((item, index) => (
-                                <a
-                                    key={index}
-                                    href={item.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-black hover:text-blue-500">
-                                    {item.icon}
-                                </a>
+                                <div key={index} className='flex items-center gap-3'>
+                                    <a
+                                        href={item.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-black hover:text-blue-500">
+                                        {item.icon}
+                                    </a>
+                                    {
+                                        item.text && (
+                                            <a
+                                                href={item.href}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-black text-sm hover:text-blue-500">
+                                                {item.text}
+                                            </a>
+                                        )
+                                    }
+                                </div>
                             ))
                         }
                     </div>

@@ -1,23 +1,23 @@
 import React from 'react'
-import { UserGroupIcon, ChatBubbleLeftEllipsisIcon, WrenchScrewdriverIcon, LinkIcon } from '@heroicons/react/24/outline'
+import { WrenchScrewdriverIcon, EyeIcon, HandRaisedIcon, CogIcon } from '@heroicons/react/24/outline'
 const cards = [
     {
-        icon: <UserGroupIcon className="h-8 w-8 font-bold text-blue-600" />,
+        icon: <EyeIcon className="h-8 w-8 font-bold text-blue-600" />,
         title: "Transparency at Every Step",
         description: "We provide clear, easy-to-understand reports, ensuring full transparency throughout the development process. Stay updated and confident in our progress at all times.",
     },
     {
-        icon: <ChatBubbleLeftEllipsisIcon className="h-8 w-8 font-bold text-blue-600" />,
+        icon: <WrenchScrewdriverIcon className="h-8 w-8 font-bold text-blue-600" />,
         title: "Expert/Strategic Guidance",
         description: "Our experts offer clear, actionable guidance to help you make informed decisions. We break down complex technical concepts to ensure you feel supported throughout the journey.",
     },
     {
-        icon: <WrenchScrewdriverIcon className="h-8 w-8 font-bold text-blue-600" />,
+        icon: <CogIcon className="h-8 w-8 font-bold text-blue-600" />,
         title: "Effortless Onboarding",
         description: "We ensure a seamless onboarding experience, guiding you through each step. Our approach helps you get started quickly, with no technical barriers.",
     },
     {
-        icon: <LinkIcon className="h-8 w-8 font-bold text-blue-600" />,
+        icon: <HandRaisedIcon className="h-8 w-8 font-bold text-blue-600" />,
         title: "Hands-On Demos",
         description: "Stay aligned with the progress through regular demos. We provide hands-on updates, allowing you to give feedback and make adjustments as needed.",
     },
@@ -35,7 +35,7 @@ const Card: React.FC = () => {
                                 {card.icon}
                                 <div>
                                     <p className="text-lg  font-semibold ">{card.title}</p>
-                                    <p className="text-sm  font-medium text-gray-400">{card.description}</p>
+                                    <p className="text-sm  mt-2 font-medium text-gray-400">{card.description}</p>
                                 </div>
                             </div>
                         </div>

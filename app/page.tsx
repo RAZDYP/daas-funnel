@@ -15,16 +15,16 @@ import Footer from '@/components/sections/Footer'
 export default function Example() {
   return (
     <div className='w-full'>
-      <div className='flex flex-col font-light w-full items-center gap-6 sm:gap-8 md:gap-12 lg:gap-14 xl:gap-14 2xl:gap-16 overflow-x-hidden'>
+      <div className='flex relative flex-col font-light w-full items-center gap-6 sm:gap-8 md:gap-12 lg:gap-14 xl:gap-14 2xl:gap-16 overflow-x-hidden'>
         <HeaderText />
         <Companies />
         <Explore />
-        <AboutUs />
+        <YoutubeVideo />
         <GraphComp />
         <Partner />
         <HowItWorks />
         <NonTechFounder />
-        <YoutubeVideo />
+        <AboutUs />
         <Testimonials />
         <ContactForm />
         <Footer />

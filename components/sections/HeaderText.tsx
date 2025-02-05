@@ -15,7 +15,7 @@ function HeaderText() {
                 muted
                 playsInline
             >
-                <source src="/static/background-video.mp4" type="video/mp4" />
+                <source src="/static/bg-video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <nav className="static flex items-center justify-between px-4 lg:px-10 py-6 bg-black/20 backdrop-blur-2xl  text-white shadow-lg hover:bg-black/50 transition">
@@ -33,12 +33,12 @@ function HeaderText() {
                     <div className="text-center">
                         <TypingEffectText />
                         <p className="text-sm sm:text-md md:text-xl lg:text-xl xl:text-xl 2xl:text-xl font-openSauceSansMedium">
-                            From Startups to Industry leaders, we empower businesses at Every Stage - Start to Success and Beyond.
+                            Startups to Industry leaders, we empower businesses at Every Stage - From Start to Success and Beyond.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
                         <ServiceCard
-                            title="Staff Augmentation"
+                            title="Developer Hiring"
                             description="Enabling your team to reach project goals."
                             icon={<UserGroupIcon className="h-8 w-8 font-bold text-white" />}
                         />
@@ -55,6 +55,7 @@ function HeaderText() {
 
                     </div>
                     <GlowingButton label="Get Started" />
+
                 </section>
             </div>
         </div>

@@ -20,7 +20,6 @@ const openSauceSansSemibold = localFont({
 
 
 export const metadata: Metadata = {
-  title: "DaaS Funnel",
   description: "workwithdaas",
 };
 
@@ -31,6 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>DaaS | Developer(s) as a Service</title>
+      </head>
       <body
         className={`antialiased font-openSauceSansMedium font-light  bg-white text-[#1c2d68] ${openSauceSansMedium.variable} ${openSauceSansRegular.variable} ${openSauceSansSemibold.variable}`}
       >

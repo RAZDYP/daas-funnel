@@ -32,8 +32,8 @@ const HeaderText = () => {
         return () => clearTimeout(typingTimeout);
     }, [text, isDeleting, typingSpeed, loopIndex, phraseText]);
     return (
-        <div className="text-center text-[26px] sm:text-[36px] md:text-[48px]  font-semibold">
-            Are you looking for <span className="text-[#215FF6]">{text}</span>
+        <div className="text-center flex flex-col  text-[26px] sm:text-[36px] md:text-[48px]  font-semibold">
+            <p>Are you looking for</p>  <span className="text-[#36a1e3]">{text} |</span>
         </div>
     );
 };
