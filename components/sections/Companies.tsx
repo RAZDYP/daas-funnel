@@ -43,7 +43,6 @@ const companies = [
         img: GcpLogo,
         size: 10
     },
-
     {
         name: "GoogleGemini",
         img: GoogleGeminiLogo,

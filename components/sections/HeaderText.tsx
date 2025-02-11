@@ -6,6 +6,9 @@ import Image from 'next/image'
 import mainLogo from '@/public/images/logo-main.svg'
 import { UserGroupIcon, WrenchScrewdriverIcon, LinkIcon } from '@heroicons/react/24/outline'
 function HeaderText() {
+    const openCalendly = () => {
+        window.open("https://calendly.com/capri-ai/daas-discovery", "_blank");
+    }
     return (
         <div className="relative w-full  h-full items-center justify-center text-white">
             <video
@@ -25,6 +28,7 @@ function HeaderText() {
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                     <GlowingButton
                         label="Book a call"
+                        onClick={openCalendly}
                     />
                 </div>
             </nav>
@@ -39,7 +43,7 @@ function HeaderText() {
                     <div className="grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
                         <ServiceCard
                             title="Developer Hiring"
-                            description="Enabling your team to reach project goals."
+                            description="Hire skilled developers, ready to scale your vision."
                             icon={<UserGroupIcon className="h-8 w-8 font-bold text-white" />}
                         />
                         <ServiceCard
@@ -52,10 +56,8 @@ function HeaderText() {
                             description="Disrupt your industry with AI & ML"
                             icon={<LinkIcon className="h-8 w-8 font-bold text-white" />}
                         />
-
                     </div>
-                    <GlowingButton label="Get Started" />
-
+                    <GlowingButton label="Get Started" onClick={openCalendly} />
                 </section>
             </div>
         </div>

@@ -16,31 +16,23 @@ const testimonials = [
         quote:
             "Team DaaS were highly responsive and flexible. If you're stuck, don't know what to do, or need custom integration, just call Quinton! I would definitely recommend working with them if you need somebody to lead you to the next step with ease.",
         name: "Luka",
-        title: "CEO, Emrana Engineering",
+        title: "CEO, Flywheel Solutions",
         image: LukaIcon
     },
     {
         id: 2,
         quote:
             "DaaS has been the most communicative, reliable and quality driven software partner we could ask for. It's refreshing to work with a team that's honest, straightforward, and committed to quality. Even during tough projects Quinton and team DaaS have proven to be the best succeeds, truly helping us succeed.",
-        name: "Emma Jackson",
-        title: "Product Manager, SwiftShopper",
+        name: "Emma",
+        title: "Owner, The Idea Farm",
         image: EmmaIcon
-    },
-    {
-        id: 3,
-        quote:
-            "Highly impressed by DaaS’s clear plan and commitment. My biggest concern was pricing, but Quintin found a way to deliver the same high-quality service within my budget. He committed to a 3-week timeline, but was already 80% done in the first week, leaving only minor refinements. The software when completed worked seamlessly, and gave me complete confidence in the final product.",
-        name: "Raja",
-        title: "CTO, TechEase",
-        image: Raja
     },
     {
         id: 4,
         quote:
             "Was stuck and had no idea what to do. So I reached out to Team DaaS, and they helped me through and through. DaaS stepped in and exceeded expectations, ensuring my projects moved along the timelines I’ve given my clients. They made me shine in front of my clients. So if you need reliable and professional project assistance, I highly recommend DaaS!",
-        name: "Mc Master.",
-        title: "CTO, TechEase",
+        name: "Kara",
+        title: "Owner, MC master digital",
         image: KaraIcon
     },
     {
@@ -48,17 +40,25 @@ const testimonials = [
         quote:
             "Team DaaS has been an integral part of our team, and I can’t recommend them highly enough. The price point for their work is exceptional, given the level of dedication and results they deliver. They’ve been helping us with integrating NLU and NLG into our software. They have been fantastic; super reliable and consistently going above and beyond.",
         name: "Jackson",
-        title: "CTO, TechEase",
+        title: "CEO, Greenwatt Counciling, Attribute",
         image: JacksonIcon
     },
     {
         id: 6,
         quote:
             "DaaS and Quinton felt more like partners than just a service provider trying to make money; deeply involved, passionate, and committed to the project. They operate with integrity while staying mindful of costs. This has been the best experience I’ve had with a development company.",
-        name: "Ovvy",
-        title: "CTO, Ovvy",
+        name: "Tyler",
+        title: "CEO, Ovvy",
         image: TylerIcon
     },
+    {
+        id: 3,
+        quote:
+            "Highly impressed by DaaS’s clear plan and commitment. My biggest concern was pricing, but Quintin found a way to deliver the same high-quality service within my budget. He committed to a 3-week timeline, but was already 80% done in the first week, leaving only minor refinements. The software when completed worked seamlessly, and gave me complete confidence in the final product.",
+        name: "Raja",
+        title: "CTO",
+        image: Raja
+    }
 ];
 
 const Carousel = () => {

@@ -24,8 +24,8 @@ const cards = [
         icon: <div className="rounded-full w-fit p-[10px] bg-[#215FF6]">
             <WrenchScrewdriverIcon className="h-6 w-6 font-bold text-white" />
         </div>,
-        title: "Staff Augmentation",
-        description: "From technical consulting to hiring and recruiting, we deliver pre-vetted engineers and tech leaders who integrate quickly and effectively into your team for seamless project execution.",
+        title: "Developer Hiring ",
+        description: "Find top-tier developers, from consultants to full-time hires, seamlessly integrating into your team for efficient project execution.",
     },
 ];
 const Card: React.FC = () => {
