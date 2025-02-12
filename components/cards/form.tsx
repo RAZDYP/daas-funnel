@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Input from '@/components/inputs/input'
 import GlowingButton from '@/components/GlowingButton';
+import Toast from '@/components/toast';
 
 export default function Example() {
     const [formData, setFormData] = useState({
@@ -11,14 +12,21 @@ export default function Example() {
         email: "",
         message: "",
     });
+    const [loading, setLoading] = useState(false);
+    const [toastMessage, setToastMessage] = useState("");
+    const [showToast, setShowToast] = useState(false);
+    const [toastColor, setToastColor] = useState("bg-green-500");
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
+        setLoading(true);
+        setToastMessage("");
+        setShowToast(false);
         const googleFormURL =
             "https://docs.google.com/forms/d/e/1FAIpQLSeaCXq483YHH93ogc4bLmagpeBhxiIjYbpPIUjsTJbSweSdng/formResponse";
-
-        const formParams = new URLSearchParams({
+        const formBody = new URLSearchParams({
             "entry.1178894767": formData.firstName,
             "entry.1662096404": formData.lastName,
             "entry.29468537": formData.companyName,
@@ -26,7 +34,34 @@ export default function Example() {
             "entry.1317956911": formData.email,
             "entry.1130344011": formData.message,
         });
-        window.open(`${googleFormURL}?${formParams.toString()}`, "_blank");
+        try {
+            await fetch(googleFormURL, {
+                method: "POST",
+                body: formBody.toString(),
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                mode: "no-cors",
+            });
+            setToastMessage("Your response has been submitted successfully!");
+            setShowToast(true);
+            setFormData({
+                firstName: "",
+                lastName: "",
+                companyName: "",
+                linkedIn: "",
+                email: "",
+                message: "",
+            });
+        } catch (error) {
+            setToastMessage("Failed to submit the form. Please try again.");
+            setShowToast(true);
+            setToastColor("bg-red-500");
+            console.error(error);
+        } finally {
+            setLoading(false);
+        }
+
     };
     return (
         <div className='flex bg-white k flex-col w-full items-center gap-10'>
@@ -75,9 +110,24 @@ export default function Example() {
                 />
             </div>
             <GlowingButton
-                label='Submit'
+                label={loading ? "Submitting..." : "Submit"}
                 className='text-white'
                 onClick={handleSubmit}
+                disabled={
+                    !formData.firstName ||
+                    !formData.lastName ||
+                    !formData.companyName ||
+                    !formData.linkedIn ||
+                    !formData.email ||
+                    !formData.message ||
+                    loading
+                }
+            />
+            <Toast
+                message={toastMessage}
+                show={showToast}
+                onClose={() => setShowToast(false)}
+                toastColor={toastColor}
             />
         </div>
     );

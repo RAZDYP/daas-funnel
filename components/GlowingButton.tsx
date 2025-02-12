@@ -4,11 +4,13 @@ interface GlowingButtonProps {
   label: string;
   onClick?: () => void;
   className?: string;
+  disabled?: boolean;
 }
 const GlowingButton: React.FC<GlowingButtonProps> = ({
   label,
   onClick,
   className = "",
+  disabled
 }) => {
   const buttonClasses = `
     bg-[#215FF6]
@@ -42,7 +44,9 @@ const GlowingButton: React.FC<GlowingButtonProps> = ({
   return (
     <>
       <style>{glowingAnimation}</style>
-      <button onClick={onClick} className={`${buttonClasses} ${className}`}>
+      <button
+        disabled={disabled}
+        onClick={onClick} className={`${buttonClasses} ${className} ${disabled ? " cursor-not-allowed" : ""}`}>
         {label}
       </button>
     </>
